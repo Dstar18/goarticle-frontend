@@ -45,10 +45,6 @@ $(document).ready(function() {
 
     fetchData('publish');
 
-    $('#add-new').on('click', function() {
-        alert('Add New Article button clicked!');
-    });
-
     $('#status-tabs a').on('click', function(e) {
         e.preventDefault();
         const status = $(this).data('status');
