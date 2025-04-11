@@ -18,14 +18,11 @@ $(document).ready(function() {
                                     <td>${item.category}</td>
                                     <td>${item.status}</td>
                                     <td>
-                                        <button class="btn btn-warning btn-sm edit" data-id="${item.id}">
+                                        <a href="edit.html?id=${item.id}" class="btn btn-warning btn-sm">
                                             <i class="fas fa-edit"></i>
-                                        </button>
+                                        </a>
                                         <button class="btn btn-danger btn-sm delete" data-id="${item.id}">
                                             <i class="fas fa-trash"></i>
-                                        </button>
-                                        <button class="btn btn-info btn-sm preview" data-id="${item.id}">
-                                            <i class="fas fa-eye"></i>
                                         </button>
                                     </td>
                                 </tr>
@@ -109,10 +106,5 @@ $(document).ready(function() {
                 }
             });
         }
-    });
-    
-    $(document).on('click', '.preview', function() {
-        const id = $(this).data('id');
-        alert('Preview Article ID: ' + id);
     });
 });
