@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Fetch Data API</title>  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>  
+</head>  
+<body>  
+
+<h1>Data dari API</h1>  
+<div id="data"></div>  
+
+<script>  
+    $(document).ready(function() {  
+        // URL API yang ingin diakses  
+        const apiUrl = 'http://localhost:3000/api/article/4/0'; // Ganti dengan URL API yang sesuai  
+
+        // Mengambil data dari API  
+        $.ajax({  
+            url: apiUrl,  
+            method: 'GET',  
+            dataType: 'json',  
+            success: function(response) {  
+                // Menampilkan data di elemen dengan ID 'data'  
+                $('#data').html(JSON.stringify(response, null, 2));  
+            },  
+            error: function(xhr, status, error) {  
+                // Menangani kesalahan  
+                console.error('Error fetching data:', status, error);  
+                $('#data').html('<p>There was an error retrieving the data.</p>');  
+            }  
+        });  
+    });  
+</script>  
+
+</body>  
+</html>  

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Data Artikel</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+
+<div class="container">
+    <h1 class="mt-5">Data Artikel</h1>
+    <button class="btn btn-primary mb-3" id="add-new">Add New</button>
+
+    <!-- Nav tabs for status -->
+    <ul class="nav nav-tabs mb-3" id="status-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" href="#" data-status="publish">Published</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-status="draft">Drafts</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#" data-status="thrash">Trashed</a>
+        </li>
+    </ul>
+
+    <table class="table table-striped" id="data-table">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="data-body">
+            <!-- Data dari API -->
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
