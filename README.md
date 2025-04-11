@@ -1,4 +1,4 @@
-# Artikel Management App
+# Technical Test Sharing Vision | Frontend Post Article
 
 Project ini adalah aplikasi manajemen artikel sederhana berbasis web. Bagian dari frontend GoArticle. 
 Aplikasi ini memiliki fitur untuk menambahkan, mengedit, memindahkan artikel ke trash, serta menampilkan artikel yang dipublish dalam tampilan blog dengan pagination.
@@ -28,12 +28,15 @@ Aplikasi ini memiliki fitur untuk menambahkan, mengedit, memindahkan artikel ke 
 ## 🚀 Cara Menjalankan Project
 
 ### 1. Clone Repository
-
 ```bash
 git clone https://github.com/Dstar18/goarticle-frontend
-cd goarticle-frontend
-
+```
 ### 2. Pastikan Backend Golang sudah berjalan di komputer
 Jika belum, silahkan cek di repo: https://github.com/Dstar18/GoArticle
 
-### 3. Pindahkan project frontend ke Webserver
+### 3. Pindahkan project frontend ke Webserver (htdocs)
+
+### 4. Buka di aplikasi dibrowser
+```bash
+http://localhost:{your_port}/goarticle-frontend/
+```
